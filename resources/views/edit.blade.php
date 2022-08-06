@@ -338,6 +338,18 @@ if ( document.querySelector('#description').value==document.getElementById('desc
 }
 }; 
 
+
+document.getElementById("machine").onchange = function(){ 
+
+
+for (let i = 0; i < document.getElementById('machine').getElementsByTagName('option').length-1; i++) {
+console.log (document.querySelector('#machine').value);
+if ( document.querySelector('#machine').value==document.getElementById('machine').getElementsByTagName('option')[i].value){
+	document.querySelector('#description_machine').value=document.getElementById('description_machine').getElementsByTagName('option')[i].value;
+	}
+  
+}
+}; 
 </script>
 </html>
 
